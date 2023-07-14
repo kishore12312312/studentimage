@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ReactAspCRUDBackend.Models
 {
@@ -11,6 +12,7 @@ namespace ReactAspCRUDBackend.Models
         {
             get; set;
         }
-
+        [NotMapped]
+        public IFormFile File { get; set; }
     }
 }
