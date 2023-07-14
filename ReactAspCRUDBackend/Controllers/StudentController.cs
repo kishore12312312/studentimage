@@ -18,9 +18,7 @@ namespace ReactAspCrud.Controllers
     public class StudentController : ControllerBase
     {
         private readonly StudentDbContext _studentDbContext;
-        private const string StorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=studentstorage3e4;AccountKey=knYsohauq/EySXacbR1AYzu+qiUv5S8RY7jRQogqELEwAPk9379VTD64mk/ZWI3letWC4HPMC5pj+AStRHn+7A==;EndpointSuffix=core.windows.net";
-        private const string ContainerName = "images";
-
+       
         public StudentController(StudentDbContext studentDbContext)
         {
             _studentDbContext = studentDbContext;
